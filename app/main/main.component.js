@@ -4,17 +4,13 @@
     angular
         .module("main")
         .component("main", {
-            controller: function() {
-                console.log("Main component controller constructor");
-                this.title = "AngularJS Sandbox";
-            },
+            controller: mainController,
             templateUrl: "main/main.component.html"
         });
 
-    /*
-    var mainController = () => {
-        console.log("Main component controller constructor");
-        this.title = "AngularJS Sandbox";
-    };
-    */
+    function mainController() {
+        const me = this;
+        console.debug("Main component controller constructor");
+        me.title = "AngularJS Sandbox";
+    }
 })();

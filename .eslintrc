@@ -13,8 +13,8 @@
     "globals": {
         "$": true,
         "angular": true,
-        "browser": true
-
+        "browser": true,
+        "inject": true
     },
     "parserOptions": {
         "ecmaFeatures": {

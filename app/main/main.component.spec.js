@@ -4,9 +4,14 @@ describe("mainComponent", function() {
 
     // Test the controller
     describe("MainController", function() {
-        it("should create a model with a title property", inject(function($componentController) {
-            const ctrl = $componentController("main");
-            expect(ctrl.title.length).toBeGreaterThan(0);
+        let ctrl;
+
+        beforeEach(inject(function($componentController) {
+            ctrl = $componentController("main");
         }));
+
+        it("should create a model with a title property", function() {
+            expect(ctrl.title.length).toBeGreaterThan(0);
+        });
     });
 });

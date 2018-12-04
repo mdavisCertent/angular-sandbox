@@ -37,6 +37,12 @@ module.exports = function(config) {
                 pattern: "app/**/*.spec.js",
                 watched: true
             },
+            {
+                pattern: "e2e-tests/**/*",
+                included: false,
+                served: false,
+                watched: false
+            },
             "!(node_modules)/**/*!(.module|.spec).js"
         ],
         frameworks: ["jasmine"],

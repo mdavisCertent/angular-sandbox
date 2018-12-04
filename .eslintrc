@@ -3,7 +3,8 @@
         "browser": true,
         "es6": true,
         "jasmine": true,
-        "node": true
+        "node": true,
+        "protractor": true
     },
     "extends": [
         "eslint:recommended",
@@ -12,7 +13,8 @@
     "globals": {
         "$": true,
         "angular": true,
-        "inject": true
+        "browser": true
+
     },
     "parserOptions": {
         "ecmaFeatures": {

@@ -1,0 +1,35 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jasmine": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:angular/johnpapa"
+    ],
+    "globals": {
+        "$": true,
+        "angular": true,
+        "inject": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "arrowFunctions": true,
+            "templateStrings": true
+        },
+        "ecmaVersion": 2017,
+        "sourceType": "script"
+    },
+    "rules": {
+        "comma-dangle": ["warn", "never"],
+
+        "indent": ["warn", 4],
+        "no-console": "off",
+        "quotes": ["warn", "double"],
+        "semi": ["error", "always"],
+
+        "angular/file-name": "off"
+    }
+}

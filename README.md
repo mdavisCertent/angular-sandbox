@@ -1,2 +1,3 @@
-# angular-sandbox
-AngularJS Sanbox
+# AngularJS Sanbox
+
+Sandbox used for learning AngularJS
